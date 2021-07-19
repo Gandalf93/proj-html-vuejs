@@ -1,0 +1,35 @@
+.sezione1{
+    .div1{
+        line-height: 40px;
+        width: 60%;
+        margin: auto;
+        hr{
+            border-top: 2px solid orange;
+            width: 200px;
+            margin: auto;
+           
+        }
+    }
+
+    .div2{
+        margin: auto;
+        div{
+            height: 200px;
+            background-color: aquamarine;
+            margin: 0 20px;
+        }
+    }
+}
+            
+.sezione2{
+    div{
+        height: 400px;
+        background-image: url(../assets/img/counter.webp);
+        background-size: cover;
+    }
+}           
+        
+        
+        
+    
+        
