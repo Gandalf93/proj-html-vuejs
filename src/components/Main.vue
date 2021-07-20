@@ -2,114 +2,75 @@
   <div class="text-center">
       <!-- SEZIONE 1 -->
       <section class="sezione1 mt-5">
-        <div class="text-uppercase div1">
-          <h4 class="mb-4">specialists in modern construction</h4>
-          <hr>
-          <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero facere molestias ullam dignissimos aperiam iste, corrupti porro quis perspiciatis a.</p>
-        </div>
-        <div class="mt-5 div2 d-flex flex-row justify-content-center">
-           <div class="col-2"></div>
-           <div class="col-2"></div>
-           <div class="col-2"></div>
-           <div class="col-2"></div>
-        </div>
+        <Sezione1/>
       </section>
 
       <!-- SEZIONE 2 CONTATORE -->
       <section class="sezione2 mt-5">
-        <div>
-        </div>
+        <Sezione2/>
       </section>
           
       <!-- SEZIONE 3 -->
       <section class="sezione3 mt-5">
-        
-        <div class="text-uppercase div1">
-          <h4 class="mb-4">explore recent work</h4>
-          <hr>
-          <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero facere molestias ullam dignissimos aperiam iste, corrupti porro quis perspiciatis a.</p>
-        </div>
-
-        <div class="row d-flex justify-content-center riga-foto">
-          <div class="col-3">
-            <img src="../assets/img/img1.webp" alt="">
-          </div>
-          <div class="col-3">
-            <img src="../assets/img/img2.webp" alt="">
-          </div>
-          <div class="col-3">
-            <img src="../assets/img/img3.webp" alt="">
-          </div>
-        </div>
-
-        <div class="m-5">
-          <a class="text-uppercase " href="#">view all projects</a>
-        </div>
-        
+        <Sezione3/>
       </section>
-
+        
       <!-- SEZIONE 4 -->
       <section class="sezione4">
-        <div class="text-uppercase div1">
-          <h4 class="mb-4">our core values</h4>
-          <hr>
-          <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero facere molestias ullam dignissimos aperiam iste, corrupti porro quis perspiciatis a.</p>
-        </div>
-        <div class="mt-5 div2 d-flex flex-row justify-content-center">
-           <div class="col-2"></div>
-           <div class="col-2"></div>
-           <div class="col-2"></div>
-           <div class="col-2"></div>
-        </div>
+        <Sezione4/>
       </section>
 
       <!-- SEZIONE 5 -->
       <section class="sezione5">
-        <div></div>
+        <Sezione5/>
       </section>
 
       <!-- SEZIONE 6 -->
       <section class="sezione6">
-        <div class="text-uppercase div1">
-          <h4 class="mb-4">latest news</h4>
-          <hr>
-          <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero facere molestias ullam dignissimos aperiam iste, corrupti porro quis perspiciatis a.</p>
-        </div>
-        <div class="mt-5 div2 d-flex flex-row justify-content-center">
-           <div class="col-2"></div>
-           <div class="col-2"></div>
-           <div class="col-2"></div>
-        </div>
+       <Sezione6/>
       </section>
-           
-
-      <!-- SEZIONE 7 -->
+        
+      <!-- SEZIONE 7 PARTNERS-->
       <section class="sezione7">
-        <div class="text-uppercase div1">
-          <h4 class="mb-4">trusted partners</h4>
-          <hr>
-          <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero facere molestias ullam dignissimos aperiam iste, corrupti porro quis perspiciatis a.</p>
-        </div>
-        <div class="mt-5 div2 d-flex flex-row justify-content-center">
-           <div class="col-2"></div>
-           <div class="col-2"></div>
-           <div class="col-2"></div>
-           <div class="col-2"></div>
-           <div class="col-2"></div>
-        </div>
+        <Sezione7/>
       </section>
   </div>
 </template>
 
 <script>
+
+import Sezione1 from "./Sezione1.vue";
+import Sezione2 from "./Sezione2.vue";
+import Sezione3 from "./Sezione3.vue";
+import Sezione4 from "./Sezione4.vue";
+import Sezione5 from "./Sezione5.vue";
+import Sezione6 from "./Sezione6.vue";
+import Sezione7 from "./Sezione7.vue";
+
 export default {
 name : 'Main',
-}
+components : {
+
+  Sezione1,
+  Sezione2,
+  Sezione3,
+  Sezione4,
+  Sezione5,
+  Sezione6,
+  Sezione7,
+  },
+};
+
 </script>
+
 
 <style lang='scss' scoped>
 @import '@/style/main.scss';
 </style>
+           
+
+           
+
           
           
           

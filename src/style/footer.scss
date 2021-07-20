@@ -10,6 +10,7 @@
     div{
          h5{
              text-transform: uppercase;
+             margin:20px 0;
          }
         img{
          width: 100%;
@@ -20,6 +21,11 @@
             text-decoration: none;
             padding: 5px;
             background-color: orange;
+        }
+        li{
+            list-style: none;
+            margin: 10px 0;
+            color: lightgray;
         }
     }
 }
