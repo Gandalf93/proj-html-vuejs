@@ -1,0 +1,30 @@
+.footer-alto{
+    height: 500px;
+    background-image: url(../assets/img/footer-img.webp);
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+.footer-basso{
+    padding: 30px;
+    div{
+         h5{
+             text-transform: uppercase;
+         }
+        img{
+         width: 100%;
+         margin-bottom: 20px;
+        }
+
+        a{
+            text-decoration: none;
+            padding: 5px;
+            background-color: orange;
+        }
+    }
+}
+
+.barra-nera{
+    background-color: black;
+    height: 100px;
+}
