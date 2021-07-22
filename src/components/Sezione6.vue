@@ -6,9 +6,10 @@
           <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero facere molestias ullam dignissimos aperiam iste, corrupti porro quis perspiciatis a.</p>
         </div>
         <div class="mt-5 div2 d-flex flex-row justify-content-center">
-           <div class="col-2" v-for="(card,index) in cards" :key='index'>
+           <div class="col-3 text-start" v-for="(card,index) in cards" :key='index'>
              <img :src="card.immagine" alt="">
-             <h4>{{card.titolo}}</h4>
+             <h4 class="mt-3">{{card.titolo}}</h4>
+             <span>{{card.data}}</span>
              <hr>
              <p>{{card.testo}}</p>
            </div>
@@ -24,18 +25,21 @@ data(){
   return{
     cards:[
     {
-      immagine:'../assets/img/news/trattore.webp',
+      immagine:require('../assets/img/news/trattore.webp'),
       titolo:'Redeveloping Florida’s Remote Southern Coast',
+      data:'December 7th, 2015',
       testo:'Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed',
     },
     {
-      icona:'fas fa-sync',
+      immagine:require('../assets/img/news/ponte.webp'),
       titolo:'How We Manage Large Construction Projects',
+      data:'December 7th, 2015',
       testo:'Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed',
     },
     {
-      icona:'fas fa-users',
+      immagine:require('../assets/img/news/torre.webp'),
       titolo:'Future proofing a modern home',
+      data:'December 6th, 2015',
       testo:'Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed',
     },
     
